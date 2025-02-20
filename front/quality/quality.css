@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --side-bar-width: 0.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: poppins;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+.page-content {
+    padding: 0 15rem;
+    margin-left: var(--side-bar-width);
+}
+
+.top-bar {
+    height: 0.9375rem; /* 15px = 0.9375rem */
+    background: linear-gradient(to right, red, purple, blue, green);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1.25rem; /* 10px 20px = 0.625rem 1.25rem */
+    background: white;
+    position: relative;
+}
+
+.login {
+    color: lightgray;
+    font-size: 0.75rem; /* 12px = 0.75rem */
+    position: absolute;
+    left: 0.625rem; /* 10px = 0.625rem */
+    top: 0.3125rem; /* 5px = 0.3125rem */
+}
+
+.logo {
+    font-size: 2.125rem; /* 34px = 2.125rem */
+    font-weight: bold;
+    margin-left: 11.25rem; /* 180px = 11.25rem */
+}
+
+.green {
+    color: green;
+}
+
+.score {
+    color: gray;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 9.375rem; /* 150px = 9.375rem */
+}
+
+.nav-links li {
+    margin: 0 0.9375rem; /* 15px = 0.9375rem */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1875rem; /* 19px = 1.1875rem */
+    border-bottom: 0.125rem solid transparent; /* 2px = 0.125rem */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove qualquer sublinhado padrão */
+    color: black; /* Cor padrão dos links */
+    transition: border-bottom 0.3s; /* Transição suave para o traço */
+}
+
+.nav-links a.quality-check:hover {
+    border-bottom: 0.25rem solid #278936; /* Traço verde ao passar o mouse */
+}
+
+.nav-links a.scorecad:hover {
+    border-bottom: 0.25rem solid purple; /* Traço roxo ao passar o mouse */
+}
+
+.nav-links a.sobre-nos:hover {
+    border-bottom: 0.25rem solid blue; /* Traço azul ao passar o mouse */
+}
+
+
+.menu-icon {
+    display: none; /* Mantém oculto no desktop */
+    font-size: 1.5rem; /* 24px = 1.5rem */
+    cursor: pointer;
+    padding: 0.625rem; /* 10px = 0.625rem */
+}
+
+.numer-container {
+    display: flex;
+    flex-direction: row; /* Alinha o rótulo e a caixa de texto em linha */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+body {
+    margin: 1;
+    font-family: poppins;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.side-bar {
+    width: var(--side-bar-width); /* Largura da barra lateral */
+    height: 100vh; /* Altura da barra igual à altura da tela */
+    background: linear-gradient(to bottom, green, lightgreen, blue, navy, purple, red, darkred); /* Gradiente vertical invertido */
+    position: fixed; /* Fixa a barra na tela */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Começa do topo da tela */
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    padding: 1.25rem; /* 20px = 1.25rem */
+}
+
+.numer-container {
+    display: flex; /* Mantém os elementos em linha */
+    align-items: center; /* Centraliza verticalmente os rótulos e entradas */
+    margin: 0.5rem 0; /* Adiciona espaçamento entre as linhas */
+}
+
+.numer-container label {
+    width: 12.5rem; /* Largura fixa para o rótulo */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-right: 1rem; /* Espaço à direita do texto */
+    font-size: 1rem; /* Tamanho da fonte do texto */
+}
+
+.numer-container input {
+    width: 60rem; /* Aumenta a largura da caixa de texto para 70rem */
+    padding: 0.625rem; /* 10px = 0.625rem */
+    font-size: 1rem; /* Tamanho da fonte da caixa de texto */
+    border: 0.0625rem solid #ccc; /* Borda da caixa de texto */
+    border-radius: 0.25rem; /* Borda arredondada */
+}
+
+.large-input {
+    width: 50rem; /* Largura da caixa de texto - aumentada */
+    height: 3rem; /* Aumente a altura da caixa de texto conforme necessário */
+    padding: 0.625rem; /* Ajuste o espaço interno */
+    font-size: 1rem; /* Tamanho da fonte da caixa de texto */
+    border: 0.0625rem solid #ccc; /* Borda da caixa de texto */
+    border-radius: 0.25rem; /* Borda arredondada */
+    line-height: 2.5rem; /* Defina o line-height para centralizar o texto */
+}
+
+.add-large-input {
+    width: 90rem; /* Largura da caixa de texto - aumentada */
+    height: 7rem; /* Aumente a altura da caixa de texto conforme necessário */
+    padding: 0.625rem; /* Ajuste o espaço interno */
+    font-size: 1rem; /* Tamanho da fonte da caixa de texto */
+    border: 0.0625rem solid #ccc; /* Borda da caixa de texto */
+    border-radius: 0.25rem; /* Borda arredondada */
+    line-height: 2.5rem; /* Defina o line-height para centralizar o texto */
+}
+
+.button-container {
+    display: flex; /* Para alinhar os botões */
+    flex-direction: column; /* Alinha os botões em coluna */
+    align-items: flex-start; /* Alinha os botões à esquerda (ou use flex-end para a direita) */
+    margin-top: 0.01rem; /* Espaço acima dos botões para ficar abaixo do texto */
+    margin-left: 21.5rem; /* Ajuste esta margem para mover os botões mais para o lado */
+}
+
+.custom-button {
+    background-color: #9cb38c81; /* Cor de fundo */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 0.10rem; /* Borda arredondada */
+    padding: 0.5rem 0; /* Espaço interno ajustado */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    margin: 0.5rem 0; /* Espaço entre os botões */
+    transition: background-color 0.3s; /* Efeito de transição para mudança de cor */
+    width: 10rem; /* Largura fixa para os botões */
+    height: 3rem; /* Altura fixa para os botões */
+}
+
+.custom-button:hover {
+    background-color: #1f6f2a69; /* Cor ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para a linha divisória */
+.divider {
+    width: 100%; /* Cobre toda a largura da tela */
+    height: 0.125rem; /* Altura da linha fina (2px) */
+    background-color: #ccc; /* Cor da linha */
+    margin: 0.5rem 0; /* Espaçamento acima e abaixo da linha */
+}
+
+/* Estilo para o título */
+.format-title {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    margin: 0; /* Remove margens do título */
+    padding: 0; /* Remove qualquer preenchimento à esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.format-container {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas horizontalmente */
+    gap: 5px; /* Reduzido o espaçamento entre as colunas */
+    padding: 20px 0;
+}
+
+.format-section .format-container {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas horizontalmente */
+    gap: 10px; /* Diminui o espaço entre as colunas nesta seção */
+}
+
+.column {
+    flex: 1; /* As colunas se expandem igualmente */
+    padding: 10px; /* Adiciona padding nas colunas */
+    text-align: center; /* Opcional: centraliza o conteúdo dentro das colunas */
+}
+
+
+/* Estilo para cada lista dentro das colunas */
+.format-list {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margem padrão */
+    font-size: 1rem; /* Tamanho da fonte dos itens da lista */
+    flex: 1; /* As listas se expandem igualmente */
+}
+
+/* Adiciona um espaço à esquerda nas colunas, exceto na primeira */
+.format-list + .format-list {
+    margin-left: 9rem; /* Adiciona espaço entre as colunas */
+}
+
+/* Estilo para cada item da lista */
+.format-list li {
+    display: flex; /* Alinha os itens em linha */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 0.5rem 0; /* Espaçamento entre os itens */
+    white-space: nowrap; /* Mantém os itens em uma linha */
+}
+
+/* Estilo para as caixas de seleção */
+.checkbox {
+    width: 2rem; /* Largura da caixa de seleção */
+    height: 2rem; /* Altura da caixa de seleção */
+    border: 0.125rem solid #278936; /* Borda da caixa */
+    margin-right: 0.5rem; /* Espaçamento à direita da caixa */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    display: flex; /* Para centralizar a seta dentro da caixa */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilo para a caixa de seleção quando ativa */
+.checkbox.active {
+    background-color: #278936; /* Cor de fundo quando ativo */
+}
+
+/* Estilo geral para as seções de conteúdo */
+.format-section {
+    margin-top: 1rem; /* Espaçamento superior entre as seções */
+    padding: 20px 0; /* Padding para as seções */
+}
+
+.column {
+    flex: 1;
+    padding: 10px; /* Adiciona padding nas colunas */
+}
+
+/* Estilo para a segunda seção */
+.format-section .format-container {
+    display: flex;
+    justify-content: flex-start; /* Alinha as colunas à esquerda */
+    gap: 40px; /* Adiciona espaço entre as colunas */
+}
+
+
+
+
+
+
+
+
+
+.content {
+    flex: 1; /* Faz com que o conteúdo empurre o footer para o final */
+    padding: 20px;
+}
+
+
+
+.content {
+    flex: 1; /* Garante que o conteúdo ocupe o espaço e empurre o footer */
+    padding: 20px;
+}
+
+footer {
+    background: #fff;
+    width: 100%;
+    margin-top: auto; /* Mantém o footer fixo no final */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 20px;
+    margin-left: 170px;
+}
+
+.footer-content span {
+   margin-right: 196px;
+}
+
+
+.footer-content .gscore {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.color-bar {
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to right, darkred, red, purple, navy, blue, lightblue, green, lightgreen);
+    margin-top: 0; /* Remove qualquer espaçamento entre footer e a barra */
+}

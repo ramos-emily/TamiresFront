@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Check - GScore</title>
+    <link rel="stylesheet" href="rascunho.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">GScore - Quality Check</h1>
+        <form>
+            <label for="number">Number</label>
+            <input type="text" id="number">
+
+            <label for="created">Created</label>
+            <input type="text" id="created">
+
+            <label for="country">Country of request</label>
+            <input type="text" id="country">
+
+            <label for="assignment">Assignment group</label>
+            <input type="text" id="assignment">
+
+            <label for="assigned">Assigned to</label>
+            <input type="text" id="assigned">
+
+            <label for="state">State</label>
+            <input type="text" id="state">
+
+            <label for="channel">Channel</label>
+            <input type="text" id="channel">
+
+            <label for="comments">Additional comments</label>
+            <textarea id="comments"></textarea>
+
+            <div class="buttons">
+                <button type="button">Previous Record</button>
+                <button type="button">Back to Date Range</button>
+            </div>
+
+            <fieldset>
+                <legend>Format</legend>
+                <label><input type="checkbox"> Format-Salutation</label>
+                <label><input type="checkbox"> Format-Punctuation</label>
+                <label><input type="checkbox"> Format-Attachments</label>
+                <label><input type="checkbox"> Format-Format of Reply</label>
+                <label><input type="checkbox"> Format-Spacing</label>
+                <label><input type="checkbox"> Format-Grammar</label>
+                <label><input type="checkbox"> Format-N/A</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Checks and Handling / Knowledge Base</legend>
+                <label><input type="checkbox"> Complete Checks / Replies</label>
+                <label><input type="checkbox"> Follow-up / Documentation</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Taxonomy</legend>
+                <label><input type="checkbox"> Taxonomy_Resolution code</label>
+                <label><input type="checkbox"> Taxonomy_Resolution field</label>
+                <label><input type="checkbox"> Taxonomy_Main Category</label>
+                <label><input type="checkbox"> Taxonomy_SubCategory</label>
+                <label><input type="checkbox"> Taxonomy_Template Used</label>
+                <label><input type="checkbox"> Taxonomy_N/A</label>
+                <label><input type="checkbox"> Taxonomy_Additional Agents</label>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

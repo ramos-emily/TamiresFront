@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quality Check</title>
+    <link rel="stylesheet" href="quality.css" />
+    <script src="quality.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar"></div>
+      <div class="header-container">
+        <div class="logo">
+          <span class="green">GS</span><span class="score">core</span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#" class="quality-check">QUALITY CHECK</a></li>
+            <li><a href="scorecad.html" class="scorecad">SCORECAD</a></li>
+            <li><a href="sobre.html" class="sobre-nos">SOBRE NÓS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-content">
+      <!-- Adicionando a barra lateral -->
+      <div class="side-bar"></div>
+
+      <div class="content">
+        <!-- Conteúdo principal da página -->
+      </div>
+      <!-- O resto do seu HTML permanece o mesmo -->
+
+      <div class="content">
+        <!-- Aqui você pode adicionar o conteúdo principal da página -->
+      </div>
+
+      <!-- Texto e caixas de texto antes do footer -->
+      <div class="content">
+        <div class="numer-container">
+          <label class="center-label" for="numer-input">Numer</label>
+          <input type="text" id="numer-input" />
+        </div>
+        <div class="numer-container">
+          <label class="center-label" for="created-input">Created</label>
+          <input type="text" id="created-input" />
+        </div>
+        <div class="numer-container">
+          <label for="country-input">Country of request</label>
+          <input type="text" id="country-input" class="large-input" />
+        </div>
+        <div class="numer-container">
+          <label for="assignment-group-input">Assignment group</label>
+          <input type="text" id="assignment-group-input" class="large-input" />
+        </div>
+        <div class="numer-container">
+          <label class="center-label" for="assigned-to-input"
+            >Assigned to</label
+          >
+          <input type="text" id="assigned-to-input" />
+        </div>
+        <div class="numer-container">
+          <label for="state-input">State</label>
+          <input type="text" id="state-input" class="large-input" />
+        </div>
+        <div class="numer-container">
+          <label class="center-label" for="channel-input">Channel</label>
+          <input type="text" id="channel-input" />
+        </div>
+        <div class="numer-container">
+          <label for="comments-input">Additional comments</label>
+          <input type="text" id="comments-input" class="add-large-input" />
+        </div>
+
+        <div class="button-container">
+          <button class="custom-button">Previous Record</button>
+          <button class="custom-button">Back to Date Range</button>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <!-- Linha abaixo dos botões -->
+
+      <h3 class="format-title">Format</h3>
+      <!-- Título alinhado à esquerda -->
+
+      <div class="format-container">
+        <ul class="format-list">
+          <li>Format-Salutation</li>
+          <li>Format-Punctuation</li>
+          <li>Format-Attachments</li>
+          <li>Format-Format of Reply</li>
+        </ul>
+
+        <ul class="format-list">
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Format-Spacing
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Format-Grammar
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Format-N/A
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Format-N/A
+          </li>
+        </ul>
+
+        <ul class="format-list">
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Format-N/A
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Format-N/A
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+        </ul>
+
+        <ul class="format-list">
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <h3 class="format-title">Checks and Handling / Knowledge Base</h3>
+
+      <!-- Seção separada para a parte abaixo -->
+      <div class="format-section">
+        <div class="format-container">
+          <div class="column">
+            <ul class="format-list">
+              <li>Complete Checks / Replies</li>
+              <li>Follow-up / Documentation</li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <ul class="format-list">
+              <li>
+                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                N / A
+              </li>
+              <li>
+                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+                N / A
+              </li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <ul class="format-list">
+              <li>
+                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+              </li>
+              <li>
+                <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+      <!-- Linha abaixo dos botões -->
+
+      <h3 class="format-title">Taxonomy</h3>
+      <!-- Título alinhado à esquerda -->
+
+      <div class="format-container">
+        <ul class="format-list">
+          <li>Taxonomy_Resolution code</li>
+          <li>Taxonomy_Resolution field</li>
+          <li>Taxonomy_Main Category</li>
+          <li>Taxonomy_Template Used</li>
+        </ul>
+
+        <ul class="format-list">
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Taxonomy_N/A
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Taxonomy_N/A
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Taxonomy_SubCategory
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Taxonomy_N/A
+          </li>
+        </ul>
+
+        <ul class="format-list">
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+          </li>
+          <li>
+            <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+            Taxonomy_Additionas (Agents)
+          </li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <span>© 2025 Robert Bosch GmbH</span>
+        <span>Contato: ct67ca@bosch.com</span>
+        <span class="gscore">GScore</span>
+      </div>
+      <div class="color-bar"></div>
+    </footer>
+  </body>
+</html>
